@@ -1,33 +1,53 @@
 package operations;
 
-public interface IProject {
+public class Project implements IProject{
   /**
    * A method to get the project's name.
+   *
    * @return name
    */
-  public String getName();
+  @Override
+  public String getName() {
+    return "";
+  }
 
   /**
    * A method to get the project's estimated cost.
+   *
    * @return estimated cost
    */
-  public double getEstimatedCost();
+  @Override
+  public double getEstimatedCost() {
+    return 0;
+  }
 
   /**
    * A method to update the project's actual cost.
+   *
    * @param actualCost in dollars
    */
-  public void setActualCost(double actualCost);
+  @Override
+  public void setActualCost(double actualCost) {
+
+  }
 
   /**
    * A method to return the project's actual cost.
+   *
    * @return actualCost
    */
-  public double getActualCost();
+  @Override
+  public double getActualCost() {
+    return 0;
+  }
 
   /**
    * A method to return the project's contractor.
+   *
    * @return Contractor
    */
-  public Contractor getContractor();
+  @Override
+  public Contractor getContractor() {
+    return null;
+  }
 }
