@@ -1,5 +1,8 @@
 package hoa;
 
+/**
+ * A class to represent an Owner of a Unit in an HOA.
+ */
 public class Owner extends Tenant implements IOwner {
   /**
    * A method to get the name of the stakeholder.

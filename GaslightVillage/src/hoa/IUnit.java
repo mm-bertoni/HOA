@@ -1,5 +1,8 @@
 package hoa;
 
+/**
+ * An interface to govern Units in an HOA.
+ */
 public interface IUnit {
   /**
    * A method to return the unit's owner.

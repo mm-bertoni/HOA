@@ -1,5 +1,10 @@
 package operations;
 
+import vendor.Contractor;
+
+/**
+ * A class for an HOA Project.
+ */
 public class Project implements IProject{
   /**
    * A method to get the project's name.

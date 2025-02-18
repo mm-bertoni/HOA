@@ -1,7 +1,7 @@
 package hoa;
 
 /**
- * An interface to govern the HOA stakeholders;
+ * An interface to govern the HOA stakeholders.
  */
 public interface IStakeholder {
   /**

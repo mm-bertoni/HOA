@@ -1,5 +1,8 @@
 package hoa;
 
+/**
+ * A class to model Tenants in an HOA.
+ */
 public class Tenant implements IStakeholder{
   /**
    * A method to get the name of the stakeholder.

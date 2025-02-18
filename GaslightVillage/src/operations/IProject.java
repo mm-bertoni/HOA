@@ -1,5 +1,10 @@
 package operations;
 
+import vendor.Contractor;
+
+/**
+ * An interface to govern an HOA Project.
+ */
 public interface IProject {
   /**
    * A method to get the project's name.

@@ -1,6 +1,13 @@
-package operations;
+package vendor;
 
-public class Contractor implements IContractor{
+import java.util.List;
+
+import operations.Project;
+
+/**
+ * A class to model Contractors working for the HOA.
+ */
+public class Contractor implements IContractor {
   /**
    * A method to get the contact person's name.
    *
@@ -29,5 +36,15 @@ public class Contractor implements IContractor{
   @Override
   public String getPhone() {
     return "";
+  }
+
+  /**
+   * A method to get all the projects the contractor is working on for a given unit.
+   *
+   * @return List of Projects
+   */
+  @Override
+  public List<Project> getProjects() {
+    return List.of();
   }
 }

@@ -1,7 +1,12 @@
-package operations;
+package vendor;
 
 import java.util.List;
 
+import operations.Project;
+
+/**
+ * An interface to govern a Contractor for the HOA.
+ */
 public interface IContractor {
   /**
    * A method to get the contact person's name.

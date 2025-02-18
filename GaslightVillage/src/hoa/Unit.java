@@ -1,5 +1,8 @@
 package hoa;
 
+/**
+ * A class for a Unit in an HOA.
+ */
 public class Unit implements IUnit{
   /**
    * A method to return the unit's owner.
