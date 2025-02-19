@@ -27,6 +27,12 @@ public class Association implements IAssociation{
   }
 
   /**
+   * A method to change the main contact.
+   * @param mainContact Owner
+   */
+  public void setMainContact(Owner mainContact) {}
+
+  /**
    * A method to get the units located in the Association.
    *
    * @return List of Units
