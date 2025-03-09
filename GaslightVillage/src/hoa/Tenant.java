@@ -4,6 +4,26 @@ package hoa;
  * A class to model Tenants in an HOA.
  */
 public class Tenant implements IStakeholder{
+  private String name;
+  private String email;
+  private String phone;
+  private Unit unit;
+
+  /**
+   * A constructor for a Tenant
+   * @param name String
+   * @param email String
+   * @param phone String
+   * @param unit Unit
+   */
+  public Tenant(String name, String email, String phone, Unit unit) {
+    this.name = name;
+    this.email = email;
+    this.phone = phone;
+    this.unit = unit;
+
+  }
+
   /**
    * A method to get the name of the stakeholder.
    *
@@ -11,7 +31,7 @@ public class Tenant implements IStakeholder{
    */
   @Override
   public String getName() {
-    return "";
+    return this.name;
   }
 
   /**
@@ -21,7 +41,7 @@ public class Tenant implements IStakeholder{
    */
   @Override
   public String getEmail() {
-    return "";
+    return this.email;
   }
 
   /**
@@ -31,7 +51,7 @@ public class Tenant implements IStakeholder{
    */
   @Override
   public String getPhone() {
-    return "";
+    return this.phone;
   }
 
   /**
@@ -40,7 +60,7 @@ public class Tenant implements IStakeholder{
    * @return unit number.
    */
   @Override
-  public String getUnit() {
-    return "";
+  public Unit getUnit() {
+    return this.unit;
   }
 }

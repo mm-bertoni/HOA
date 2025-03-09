@@ -4,6 +4,13 @@ package hoa;
  * A class to represent an Owner of a Unit in an HOA.
  */
 public class Owner extends Tenant implements IOwner {
+  private String name;
+  private String email;
+  private String phone;
+  private float ownerFraction;
+  private Boolean resident;
+  private Unit unit;
+
   /**
    * A method to get the name of the stakeholder.
    *
@@ -40,8 +47,8 @@ public class Owner extends Tenant implements IOwner {
    * @return unit number.
    */
   @Override
-  public String getUnit() {
-    return "";
+  public Unit getUnit() {
+    return null;
   }
 
   /**

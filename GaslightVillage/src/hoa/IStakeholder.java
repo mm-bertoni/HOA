@@ -23,7 +23,7 @@ public interface IStakeholder {
 
   /**
    * A method to get the unit associated with the stakeholder.
-   * @return unit number.
+   * @return unit.
    */
-  public String getUnit();
+  public Unit getUnit();
 }

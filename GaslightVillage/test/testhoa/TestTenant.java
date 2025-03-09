@@ -12,4 +12,17 @@ import org.junit.jupiter.api.Test;
  * A class to test the Tenant class.
  */
 public class TestTenant {
+  @Test
+  public void testGetName(){}
+
+  @Test
+  public void testGetEmail(){}
+
+  @Test
+  public void testGetPhone(){}
+
+  @Test
+  public void testGetUnit(){}
+
+
 }
