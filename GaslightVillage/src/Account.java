@@ -5,6 +5,12 @@ public class Account implements IAccount{
   private Float currentMonthlyFee;
   private Float expectedAnnualDeposits;
   private Float expectedAnnualExpenses;
+
+  public Account(Float currentMonthlyFee, Float currentBalance) {
+    this.currentMonthlyFee = currentMonthlyFee;
+    this.currentBalance = currentBalance;
+    this.defaultBuffer = 3000.00;
+  }
   /**
    * @param list
    */
@@ -26,23 +32,23 @@ public class Account implements IAccount{
    * @return
    */
   @Override
-  public float calculateNewFee(Float buffer) {
-    return 0;
+  public Double calculateNewFee(Double buffer) {
+    return 0.0;
   }
 
   /**
    * @return
    */
   @Override
-  public float calculateNewFee() {
-    return 0;
+  public Double calculateNewFee() {
+    return 0.0;
   }
 
   /**
    * @return
    */
   @Override
-  public float calculateThreeMonthsExpenses() {
-    return 0;
+  public Double calculateThreeMonthsExpenses() {
+    return 0.0;
   }
 }

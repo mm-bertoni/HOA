@@ -26,7 +26,7 @@ public class Project implements IProject{
    * @return
    */
   @Override
-  public Float calculateAssessment(IAccount account) {
-    return 0f;
+  public Double calculateAssessment(IAccount account) {
+    return 0.0;
   }
 }

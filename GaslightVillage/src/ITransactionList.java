@@ -1,5 +1,5 @@
 public interface ITransactionList {
-  public Float calculateExpectedDeposits();
-  public Float calculateExpectedExpenses();
+  public Double calculateExpectedDeposits();
+  public Double calculateExpectedExpenses();
   public void addTransaction(ITransaction transaction);
 }

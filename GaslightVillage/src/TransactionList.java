@@ -27,16 +27,16 @@ public class TransactionList implements ITransactionList{
    * @return
    */
   @Override
-  public Float calculateExpectedDeposits() {
-    return 0f;
+  public Double calculateExpectedDeposits() {
+    return 0.0;
   }
 
   /**
    * @return
    */
   @Override
-  public Float calculateExpectedExpenses() {
-    return 0f;
+  public Double calculateExpectedExpenses() {
+    return 0.0;
   }
 
   /**

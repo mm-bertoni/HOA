@@ -5,9 +5,9 @@ public class Owner implements IOwner{
   private String name;
   private String email;
   private int unit;
-  private Float ownershipPercent;
-  private Float monthlyFee;
-  private Map<IProject, Float> assessments;
+  private Double ownershipPercent;
+  private Double monthlyFee;
+  private Map<IProject, Double> assessments;
 
   /**
    * @param project
@@ -21,7 +21,7 @@ public class Owner implements IOwner{
    * @return
    */
   @Override
-  public Float calculateNewFee() {
-    return 0f;
+  public Double calculateNewFee() {
+    return 0.0;
   }
 }
