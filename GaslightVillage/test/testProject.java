@@ -1,0 +1,2 @@
+public class testProject {
+}
