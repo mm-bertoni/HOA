@@ -1,15 +1,16 @@
 public class Account implements IAccount{
-  private Float currentBalance;
-  private Float projectedBalanceOneYear;
-  private Float defaultBuffer;
-  private Float currentMonthlyFee;
-  private Float expectedAnnualDeposits;
-  private Float expectedAnnualExpenses;
+  private Double currentBalance;
+  private Double projectedBalanceOneYear;
+  private Double defaultBuffer;
+  private Double currentMonthlyFee;
+  private Double expectedAnnualDeposits;
+  private Double expectedAnnualExpenses;
 
-  public Account(Float currentMonthlyFee, Float currentBalance) {
+  public Account(Double currentMonthlyFee, Double currentBalance) {
     this.currentMonthlyFee = currentMonthlyFee;
     this.currentBalance = currentBalance;
     this.defaultBuffer = 3000.00;
+
   }
   /**
    * @param list
