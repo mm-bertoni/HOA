@@ -20,6 +20,15 @@ public class Owner implements IOwner{
     this.unit = unit;
   }
 
+  public void setName(String name) {
+    this.name = name;
+  }
+  public String getName() { return name; }
+  public void setEmail(String email){}
+  public String getEmail() { return email; }
+  public void setMonthlyFee(Double monthlyFee){}
+  public Double getMonthlyFee() { return monthlyFee; }
+
   /**
    * @param project
    */
