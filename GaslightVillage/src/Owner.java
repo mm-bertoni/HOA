@@ -1,13 +1,33 @@
 import java.util.Map;
 
+import Helpers.Unit;
+
 public class Owner implements IOwner{
 
   private String name;
   private String email;
-  private int unit;
-  private Float ownershipPercent;
-  private Float monthlyFee;
-  private Map<IProject, Float> assessments;
+  private Unit unit;
+  private Double monthlyFee;
+  private Map<IProject, Double> assessments;
+
+  /**
+   * A constructor for a new Owner
+   * @param name String
+   * @param unit Unit enum
+   */
+  public Owner(String name, Unit unit){
+    this.name = name;
+    this.unit = unit;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+  public String getName() { return name; }
+  public void setEmail(String email){}
+  public String getEmail() { return email; }
+  public void setMonthlyFee(Double monthlyFee){}
+  public Double getMonthlyFee() { return monthlyFee; }
 
   /**
    * @param project
@@ -21,7 +41,7 @@ public class Owner implements IOwner{
    * @return
    */
   @Override
-  public Float calculateNewFee() {
-    return 0f;
+  public Double calculateNewFee() {
+    return 0.0;
   }
 }
