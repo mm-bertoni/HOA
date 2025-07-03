@@ -27,7 +27,7 @@ public class TransactionList implements ITransactionList{
    * @return
    */
   @Override
-  public Double calculateExpectedDeposits() {
+  public Double calculateExpectedDeposits(int year) {
     return 0.0;
   }
 
@@ -35,7 +35,7 @@ public class TransactionList implements ITransactionList{
    * @return
    */
   @Override
-  public Double calculateExpectedExpenses() {
+  public Double calculateExpectedExpenses(int year) {
     return 0.0;
   }
 
@@ -45,5 +45,13 @@ public class TransactionList implements ITransactionList{
   @Override
   public void addTransaction(ITransaction transaction) {
 
+  }
+
+  /**
+   * @return
+   */
+  @Override
+  public List<ITransaction> getTransactions() {
+    return List.of();
   }
 }
