@@ -10,6 +10,22 @@ public class Account implements IAccount{
     this.defaultBuffer = 3000.00;
 
   }
+  public Double getCurrentMonthlyFee() {
+    return currentMonthlyFee;
+  }
+
+  public Double getCurrentBalance() {
+    return currentBalance;
+  }
+  public Double getBuffer() {
+    return defaultBuffer;
+  }
+  public void deposit(Double amount) {
+    currentBalance += amount;
+  }
+  public void spend(Double amount) {
+    currentBalance -= amount;
+  }
 
   /**
    * @param buffer

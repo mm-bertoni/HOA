@@ -24,24 +24,20 @@ public class Owner implements IOwner{
     this.name = name;
   }
   public String getName() { return name; }
-  public void setEmail(String email){}
+  public void setEmail(String email){this.email = email;}
   public String getEmail() { return email; }
-  public void setMonthlyFee(Double monthlyFee){}
+  public void setMonthlyFee(Double monthlyFee){this.monthlyFee = monthlyFee;}
   public Double getMonthlyFee() { return monthlyFee; }
-
+  public Unit getUnit() { return unit; }
   /**
    * @param project
    */
   @Override
-  public void addAssessment(IProject project) {
-
+  public void addAssessment(IProject project, IAccount account) {
+    double newAssessment = project.calculateAssessment(account);
+    newAssessment = newAssessment*this.unit.getOwnership();
+    this.assessments.put(project, newAssessment);
   }
 
-  /**
-   * @return
-   */
-  @Override
-  public Double calculateNewFee() {
-    return 0.0;
-  }
+
 }
