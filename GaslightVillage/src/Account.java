@@ -1,10 +1,8 @@
 public class Account implements IAccount{
   private Double currentBalance;
-  private Double projectedBalanceOneYear;
   private Double defaultBuffer;
   private Double currentMonthlyFee;
-  private Double expectedAnnualDeposits;
-  private Double expectedAnnualExpenses;
+
 
   public Account(Double currentMonthlyFee, Double currentBalance) {
     this.currentMonthlyFee = currentMonthlyFee;
@@ -12,20 +10,17 @@ public class Account implements IAccount{
     this.defaultBuffer = 3000.00;
 
   }
-  /**
-   * @param list
-   */
-  @Override
-  public void updateAnnualDeposits(ITransactionList list) {
 
+  public Double getCurrentBalance() {
+    return currentBalance;
   }
 
-  /**
-   * @param list
-   */
-  @Override
-  public void updateAnnualExpenses(ITransactionList list) {
+  public void deposit(Double amount) {
+    currentBalance += amount;
+  }
 
+  public void spend(Double amount) {
+    currentBalance -= amount;
   }
 
   /**
