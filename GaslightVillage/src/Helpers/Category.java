@@ -6,5 +6,6 @@ public enum Category {
   Insurance,
   Yard,
   Basement,
-  Cleaning
+  Cleaning,
+  Fee
 }

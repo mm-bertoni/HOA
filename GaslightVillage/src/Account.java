@@ -11,32 +11,22 @@ public class Account implements IAccount{
 
   }
 
-  public Double getCurrentBalance() {
-    return currentBalance;
-  }
-
-  public void deposit(Double amount) {
-    currentBalance += amount;
-  }
-
-  public void spend(Double amount) {
-    currentBalance -= amount;
-  }
-
   /**
    * @param buffer
+   * @param year
    * @return
    */
   @Override
-  public Double calculateNewFee(Double buffer) {
+  public Double calculateNewFee(Double buffer, int year) {
     return 0.0;
   }
 
   /**
+   * @param year
    * @return
    */
   @Override
-  public Double calculateNewFee() {
+  public Double calculateNewFee(int year) {
     return 0.0;
   }
 
